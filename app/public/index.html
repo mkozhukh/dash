@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="./assets/theme.css" />
+		<link rel="stylesheet" href="./demos/app.css" />
+		<script src="./demos/app.js"></script>
+	</head>
+
+	<body>
+		<script>
+			new app.Client({
+				url: "http://localhost:3200/api/v1",
+			})
+				.load()
+				.then(remote => {
+					new app.Demo({
+						target: document.body,
+						props: {
+							remote,
+						},
+					});
+				});
+		</script>
+	</body>
+</html>

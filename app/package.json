@@ -1,0 +1,20 @@
+{
+	"name": "mod-users",
+	"version": "0.1.0",
+	"productTag": "app",
+	"scripts": {
+		"build": "rollup --config-production --config-limited -c",
+		"watch": "rollup -c -w",
+		"watch:demos": "rollup -c -w --config-demos",
+		"dev": "run-p start:dev watch:demos",
+		"start": "sirv --port 3100 public",
+		"start:dev": "sirv --port 3100 public --dev"
+	},
+	"main": "public/dist/app.js",
+	"source": "src/components/App.svelte",
+	"svelte": "src/components/App.svelte",
+	"dependencies": {
+		"wx": "*",
+		"helpers": "*"
+	}
+}

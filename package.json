@@ -1,0 +1,35 @@
+{
+	"private": true,
+	"name": "dash-workspace",
+	"workspaces": [
+		"wx",
+		"helpers",
+		"app"
+	],
+	"scripts": {
+		"prepare": "husky install",
+		"lint": "yarn eslint ./*/src ./*/demos --ext .svelte,.ts,.js"
+	},
+	"devDependencies": {
+		"@rollup/plugin-alias": "^3.1.2",
+		"@rollup/plugin-commonjs": "^13.0.0",
+		"@rollup/plugin-node-resolve": "^8.0.1",
+		"eslint": "^7.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-svelte3": "^2.7.3",
+		"husky": "^5.0.9",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.0.5",
+		"prettier-plugin-svelte": "^1.1.0",
+		"pretty-quick": "^2.0.1",
+		"remote-client": "^0.0.1",
+		"rollup": "^2.15.0",
+		"rollup-plugin-livereload": "^1.3.0",
+		"rollup-plugin-svelte": "^6.1.1",
+		"rollup-plugin-terser": "^6.1.0",
+		"rollup-plugin-visualizer": "^4.2.0",
+		"sirv-cli": "^0.3.1",
+		"svelte": "^3.35.0",
+		"svelte-spa-router": "^3.1.0"
+	}
+}
